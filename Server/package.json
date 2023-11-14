@@ -23,6 +23,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1",
     "pg": "^8.11.3",
+    "railway": "^2.0.17",
     "sequelize": "^6.34.0",
     "supertest": "^6.3.3"
   }
