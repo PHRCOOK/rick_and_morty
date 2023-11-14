@@ -46,11 +46,9 @@ server.use("/rickandmorty", router);*/
 // Iniciar el servidor y escuchar en el puerto especificado
 const server = require("./App");
 const { conn } = require("./DB_connection");
-
-const PORT = 3001;
-
+require("dotenv").configu();
 conn.sync({ force: true }).then(() => {
-  server.listen(PORT, () => {
+  server.listen(process.env.PORT, () => {
     console.log("Servidor levantado en el puerto: " + PORT);
   });
 });
