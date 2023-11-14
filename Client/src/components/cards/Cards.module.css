@@ -1,0 +1,61 @@
+.containerCs {
+  margin-top: 15px; /* Margen superior */
+  margin-left: 100px; /* Margen izquierdo */
+  display: flex; /* Cambiar a un diseño flexible */
+  flex-wrap: wrap; /* Envolver elementos en varias líneas */
+  gap: 2%; /* Espacio entre elementos */
+}
+.imgCs {
+  border-radius: 180px;
+  margin-top: 15px;
+  width: 210px;
+  height: 210px;
+  padding-left: 15px;
+}
+@media only screen and (min-width: 1024px) {
+  .containerCs {
+    margin-top: 5px;
+    margin-left: 150px;
+    margin-right: 50px;
+  }
+  .imgCs {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .containerCs {
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 50px;
+  }
+  .imgCs {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 468px) and (max-width: 768px) {
+  .containerCs {
+    margin-top: 250px;
+    margin-left: 100px;
+    margin-right: 50px;
+    gap: 1%;
+  }
+  .imgCs {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  .containerCs {
+    margin-top: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 1%;
+  }
+  .imgCs {
+    width: 100px;
+    height: 100px;
+  }
+}

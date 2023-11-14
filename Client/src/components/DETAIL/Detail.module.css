@@ -1,0 +1,118 @@
+.containerDt {
+  margin-top: 150px;
+  margin-left: 550px;
+  background-color: rgba(137, 43, 226, 0.527);
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+  font-size: 19px;
+  text-align: left;
+  color: rgb(255, 238, 0);
+  padding: 5px;
+}
+.detailContainerDt {
+  position: relative;
+  transition: left 0.3s ease-in-out;
+}
+
+.detailContainerDt.active {
+  left: 0;
+}
+h3 {
+  margin: 2px;
+}
+.imgDt {
+  border-radius: 180px;
+  margin-top: 15px;
+  margin-left: 50px;
+  width: 210px;
+  height: 210px;
+}
+@keyframes explode {
+  0% {
+    transform: scale(1); /* Tamaño original */
+    opacity: 1; /* Opacidad completa */
+  }
+  50% {
+    transform: scale(1.5); /* Escala a 1.5 veces el tamaño original */
+    opacity: 0; /* Opacidad completa */
+  }
+  100% {
+    transform: scale(1); /* Regresa al tamaño original */
+    opacity: 1; /* Opacidad completa */
+  }
+}
+
+.imgDt:hover {
+  animation: explode 2s linear; /* Aplica la animación "explode" durante 1 segundo */
+}
+
+.divButtonDt {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonDt {
+  width: 60px;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  background: #1e1e1e;
+  color: greenyellow;
+  box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+}
+
+.buttonDt:hover {
+  cursor: pointer;
+  animation: a 0.5s 1 linear;
+}
+
+@keyframes a {
+  0% {
+    transform: scale(0.7, 1.3);
+  }
+  25% {
+    transform: scale(1.3, 0.7);
+  }
+  50% {
+    transform: scale(0.7, 1.3);
+  }
+  75% {
+    transform: scale(1.3, 0.7);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas medianas */
+  .containerDt {
+    margin-left: 200px;
+    width: 300px;
+    height: auto;
+  }
+  .imgDt {
+    margin-left: 0;
+    width: 300px;
+    height: auto;
+  }
+  /* Otros estilos para pantallas medianas */
+}
+
+@media (max-width: 468px) {
+  /* Estilos para pantallas pequeñas */
+  .containerDt {
+    margin-left: 70px;
+    width: 300px;
+    height: auto;
+  }
+  .imgDt {
+    margin-left: 50px;
+    width: 210px;
+  }
+}

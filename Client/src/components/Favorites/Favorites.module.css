@@ -1,0 +1,74 @@
+/* styles.module.css */
+.containerCa {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -150px;
+  margin-bottom: -80px;
+  padding-right: 100px;
+}
+.containerCb {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-left: 150px;
+  margin-bottom: auto;
+  padding-right: 100px;
+  gap: 2%;
+}
+
+.selectFav {
+  display: flex;
+  background-color: rgb(141, 210, 30);
+  margin-top: 40px;
+  margin-left: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.selectFav:hover {
+  background-color: rgb(
+    0,
+    0,
+    0
+  ); /* Cambia el color de fondo al pasar el cursor sobre el elemento */
+  color: rgb(
+    141,
+    210,
+    30
+  ); /* Cambia el color del texto al pasar el cursor sobre el elemento */
+  cursor: pointer; /* Cambia el cursor del mouse al pasar el cursor sobre el elemento */
+}
+
+@media screen and (max-width: 768px) {
+  .containerCa {
+    display: block;
+    margin-top: 100px;
+    margin-left: 250px;
+    gap: 2%;
+  }
+
+  .selectFav {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .containerCa {
+    display: block;
+    margin-top: 35px;
+    margin-left: 100px;
+    left: -1000px;
+    gap: 2%;
+  }
+  .selectFav {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+}
