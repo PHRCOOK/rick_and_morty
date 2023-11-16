@@ -167,7 +167,7 @@ function App() {
         break;
       case PATHROUTES.ABOUT:
         document.body.style.backgroundImage =
-          "url('https://fondosanimados.com/wp-content/uploads/2023/04/rick-3.jpg')";
+          "url('https://images.alphacoders.com/876/876589.jpg')";
         break;
       case PATHROUTES.ROOT:
         document.body.style.backgroundImage =
@@ -197,7 +197,7 @@ function App() {
     const images = [
       "https://moewalls.com/wp-content/uploads/2023/07/rick-and-morty-escape-portal-thumb.jpg",
       "https://i.pinimg.com/originals/11/3a/e5/113ae5ed2c41df59606466ed8da4e5a1.jpg",
-      "https://fondosanimados.com/wp-content/uploads/2023/04/rick-3.jpg",
+      "https://images.alphacoders.com/876/876589.jpg",
       "https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/rick-and-morty-chromebook-wallpaper.jpg",
       "https://motionbgs.com/media/776/multiverse-of-rick-and-morty.jpg",
     ];
