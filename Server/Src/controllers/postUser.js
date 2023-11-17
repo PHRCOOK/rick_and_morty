@@ -3,14 +3,14 @@ const postUser = async (req, res) => {
   try {
     const { email, password } = req.body;
     if (!email || !password) {
-      return res.status(400).send("Faltan datos");
+      return res.status(400).json({ error: "Faltan datos" });
     }
     const [user, created] = await User.findOrCreate({
       where: { email },
       defaults: { password },
     });
     if (!created) {
-      return res.status(409).send("Usuario ya existe");
+      return res.status(409).json({ error: "Usuario ya existe" });
     }
     return res.status(200).json(user);
   } catch (error) {
