@@ -7,7 +7,7 @@ import Form from "./components/Form/Form";
 import About from "./components/About/About";
 import Detail from "./components/DETAIL/Detail";
 import Favorites from "./components/Favorites/Favorites";
-import Register from "./components/Form/Register";
+import Register from "./components/Register/Register";
 import PATHROUTES from "./components/helpers/PathRoutes";
 import { Provider } from "react-redux";
 import store from "./redux/store";
@@ -290,7 +290,7 @@ function App() {
           <Route path={PATHROUTES.FAVORITES} element={<Favorites />} />
           <Route
             path={PATHROUTES.REGISTER}
-            element={<Register register={register} />}
+            element={<Register register={register} onLogout={logout} />}
           />
           <Route
             path={PATHROUTES.ERROR}

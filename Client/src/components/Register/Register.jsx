@@ -1,6 +1,6 @@
 import styles from "./Register.module.css";
 import { useState } from "react";
-import validation from "./validation";
+import validation from "../Form/validation";
 
 const FormReg = ({ register }) => {
   // Estado para almacenar los datos del usuario
