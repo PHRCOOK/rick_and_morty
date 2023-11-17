@@ -167,6 +167,7 @@ function Favorites(props) {
 }
 
 const mapStateToProps = (state) => ({
+  ...state,
   myFavorites: state.myFavorites,
 });
 
